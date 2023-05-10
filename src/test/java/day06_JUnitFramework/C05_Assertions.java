@@ -25,9 +25,10 @@ public class C05_Assertions {
     public void test01(){
         // ○ Sayfa URL’inin https://www.bestbuy.com/ ‘a esit oldugunu test edin
         mahserin4Atlisi();
-        String expectedUrl="https://www.bestbuy.com";
+        String expectedUrl="https://www.bestbuy.com/";
         String actualUrl= driver.getCurrentUrl(); // https://www.bestbuy.com/
         Assert.assertEquals(expectedUrl,actualUrl);
+        driver.close();
     }
     @Test
     public void test02(){
@@ -35,5 +36,6 @@ public class C05_Assertions {
         String unExpectedIcerik = "Rest";
         String actualTitle= driver.getTitle();
         Assert.assertFalse(actualTitle.contains(unExpectedIcerik));
+        driver.close();
     }
 }
