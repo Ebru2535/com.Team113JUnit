@@ -1,7 +1,6 @@
 package MyStudy;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Test1 {
+public class Assert {
     WebDriver driver;
     /*
     1. Launch browser
@@ -30,7 +29,7 @@ public class Test1 {
     driver.findElement(By.xpath("//a[.=' Home']")).isDisplayed();
     driver.findElement(By.xpath("//a[.=' Signup / Login']")).click();
      WebElement loginBuotnu= driver.findElement(By.xpath("/html/body/section/div/div/div[1]/div/h2"));
-     Assert.assertTrue(loginBuotnu.isDisplayed());
+     org.junit.Assert.assertTrue(loginBuotnu.isDisplayed());
    WebElement emailButonu=driver.findElement(By.xpath("(//input[@type='email'])[1]"));
    emailButonu.sendKeys("a@gmail.com");
    emailButonu.click();
