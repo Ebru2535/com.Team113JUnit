@@ -11,6 +11,10 @@ import java.time.Duration;
 
 public class Assert {
     WebDriver driver;
+
+    public static void assertTrue(boolean pcInDollarsTrue) {
+    }
+
     /*
     1. Launch browser
 
