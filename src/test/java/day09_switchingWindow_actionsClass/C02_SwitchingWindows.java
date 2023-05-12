@@ -67,6 +67,7 @@ public class C02_SwitchingWindows extends TestBase {
         expectedYazi = "New Window";
         actualYazi = newWindowyaziElementi.getText();
         Assert.assertEquals(expectedYazi,actualYazi);
+
         //● Bir önceki pencereye geri döndükten sonra sayfa başlığının “The Internet” olduğunu doğrulayın.
 
         driver.switchTo().window(ilkSayfaWHD);
