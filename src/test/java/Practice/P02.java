@@ -5,14 +5,17 @@ import org.junit.*;
 public class P02 {
     @BeforeClass
     public static void beforeClass(){
+
         System.out.println("Before Class Çalıştı. Testler Çalıştırıacak");
     }
     @AfterClass
     public static void afterClass(){
+
         System.out.println("After Class Çalıştı. Testlerin Çalıştırılması Bitti.");
     }
     @Before
     public void before(){
+
         System.out.println("Yeni Bir Test Çalıştırılıyor");
     }
     @After
